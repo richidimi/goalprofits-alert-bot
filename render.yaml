@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: goalprofits-alert-bot
+    env: python
+    buildCommand: ""
+    startCommand: "python main.py"
+    plan: free
+    region: oregon
+    envVars:
+      - key: TELEGRAM_TOKEN
+        sync: false
+      - key: TELEGRAM_CHAT_ID
+        sync: false
